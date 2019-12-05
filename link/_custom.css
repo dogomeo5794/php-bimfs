@@ -1,0 +1,179 @@
+.inputs{
+    border-radius: 3px;
+    border-style: none;
+    box-shadow: 0px 0px 1px black;  
+    height: 20px;
+    margin-top: 5px;
+    width:98%;
+    text-indent: 5px;
+    margin-bottom: 5px;
+}
+.small{
+	width:48.5%;
+} 
+
+
+
+tr.cursor-pointed {
+    cursor: pointer;
+    /*
+    border-bottom-style: double;
+    border-top-style: double;
+    */
+}
+
+tr.cursor-pointed > td {
+    vertical-align: middle !important;
+}
+
+tr.cursor-pointed:hover {
+    color: blue;
+    text-decoration-line: underline;
+    border-bottom: 2px solid #3c8dbc !important;
+}
+
+.dataTables_filter{ 
+    display: none; 
+}
+
+.content-header > .breadcrumb > li + li:before {
+    content: '|\00a0' !important;
+}
+
+tr:not(:first-child) > th {
+    font-weight: 150;
+}
+
+.print_table_area {
+    display: none;
+}
+
+@media print {
+    .print_table_area {
+        display: block;
+    }
+            
+    .row, .not-print {
+        display: none;
+    }
+}
+
+
+
+
+
+
+/*** Modals Customization ***/
+.cus_modal_form1 {
+    
+    }
+    
+    .cus_modal_form1 > div {
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+        width: 95% !important;
+    }
+    
+    .cus_modal_form1 > div > div > div.modal-body {
+        height: 505px !important; 
+        overflow-x: auto;
+    }
+    
+    .cus_modal_form1 > div > div > div.modal-header {
+        background-color: lightgrey !important;
+    }
+    
+    .cus_modal_form1 > div > div > div.modal-footer {
+        background-color: lightgrey !important;
+    }
+    
+    .cus_modal_form1 > div > div > div.modal-header > h4 {
+        color: white !important;
+        font-weight: bolder;
+        text-align: center !important;
+    }
+    
+    i > b {
+        font-size: 11px !important;
+    }
+    
+    .form-lbl {
+        font-size: 10px !important;
+    }
+    
+    .tr_border {
+        border-bottom: 2px solid #3c8dbc !important;
+        //border-bottom-style: solid !important;
+    }
+    
+    .tabs_cus > li {
+        padding: 0px !important;
+        font-size: 12px !important;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }  
+    
+    .tabs_cus > li > a  {
+        border-top-right-radius: 1px !important;
+        border-top-left-radius: 1px !important;
+        border-bottom: 1px solid #3c8dbc !important;
+        border-top: 1px solid #3c8dbc !important;
+        font-weight: bold !important;
+        color: white !important;
+        font-family: times new roman;
+    } 
+    
+    .tabs_cus > li.active > a, .tabs_cus > li > a:hover, .tabs_cus > li > a:active, .tabs_cus > li > a:focus {
+        border-top-right-radius: 1px !important;
+        border-top-left-radius: 1px !important;
+        border-bottom: 2px solid #3c8dbc !important;
+        border-top: none !important;
+        color: black !important;
+    } 
+    
+    .tabs_cus > li > a:hover {
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    .tabs_cus {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        border-bottom-style: hidden !important;
+    }
+    
+    .prof-pic {
+        height: 173px; 
+        border: 1px dotted blue; 
+        cursor: pointer;
+    }
+    
+    .prof-pic:hover {
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    
+    table.row-number {
+        counter-reset: rownumber;
+    }
+    
+    table.row-number tr:not(:first-child) {
+        counter-increment: rowNumber;
+    }
+    
+    table.row-number tr td:first-child::after {
+        content: '#' counter(rowNumber);
+    }
+    
+
+/*** .- Modals Customization -.  ***/
+
+
+
+
+
+
+
+
+
